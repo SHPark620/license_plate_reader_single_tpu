@@ -27,11 +27,10 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 ## Project Structure
 
 ```
-camera/                 # 실시간 이미지 캡처 모듈
-utils/                 # 공통 유틸리티 및 후처리
-results/               # 결과 이미지 저장
-requirements.txt       # 의존 패키지 리스트
-README.md              # 프로젝트 설명 문서
+📁src/                   # 소스코드
+📁results/               # 결과 이미지 저장
+📁requirements.txt       # 의존 패키지 리스트
+📁README.md              # 프로젝트 설명 문서
 ```
 
 ---
