@@ -56,6 +56,14 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 | YOLOv8n   | `yolov8n_int8_edgetpu.tflite` | Coral TPU |
 | LPRNet    | `lprnet_float32.pb`       | CPU       |
 
+-YOLOv8n의 구조도
+
+![yolov8n_architecture](./results/yolov8n_architecture.png)
+
+-LPRNet의 구조도
+
+![lprnet_architecture](./results/lprnet_architecture.png)
+
 ---
 
 ## System Overview
@@ -77,6 +85,10 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 | Power Usage (YOLOv8n Only) | 8~9w |
 | Power Usage (YOLOv8n And LPRNet) | ~11w|
 
+![runtime_display](./results/runtime_display.png)
+
+![fps_measurement_graph](./results/fps_measurement_graph.png)
+
 ---
 
 ## Dataset
@@ -87,6 +99,7 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 - 구성:  
   - YOLOv8n: 번호판 검출  
   - LPRNet: 크롭 후 94×24×3 리사이즈된 이미지로 문자 인식
+  - 
 ![data_preprocessing](./results/data_preprocessing.png)
 ---
 
@@ -96,6 +109,12 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 - 완전한 On-Device 시스템
 - 고속 YOLOv8 추론 (TPU), 경량 OCR (CPU)
 - 실시간 이미지 스트리밍 + 오버레이
+
+---
+## Results
+
+본 연구에서는 엣지 컴퓨터 중 가장 저렴하고 경량인 Raspberry Pi 5 와 Goggle Coral Usb용 AI 가속기를 활요앟여 휴대 가능하면서 실시간으로 자동차 번호판 인식기능을 수행하는 인공지능기반의 차량 번호판을 개발하고 성능을 평가하였다.
+평균 FPS 는 18.53[fps]를 기록하였으며 정지된 차량에서 번호판을 인식하는데에 문제가 없을 것으로 보이나, 고속으로 이동하는 도주차량 처리에는 FPS의 성능을 높일 필요가 있음을 확인하였다.
 
 ---
 
