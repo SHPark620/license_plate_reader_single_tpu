@@ -41,7 +41,7 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 |---------------|------|
 | Device        | Raspberry Pi 5 (8GB) |
 | OS            | Raspberry Pi OS 64-bit |
-| Python(camera_capture.py)        | 3.12 |
+| Python(camera_capture.py)        | 3.11 |
 | Python(inference.py)        | 3.9 |
 | Accelerator   | Coral USB Edge TPU |
 | Camera        | Raspberry Pi Camera Module 3 |
