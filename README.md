@@ -21,7 +21,7 @@ YOLOv8n 모델을 Coral TPU 전용 TFLite 형식으로 변환하여 객체 탐�
 2. 이미지 Crop 및 Resize (94×24)  
 3. 스페이스바 입력 시 LPRNet 실행 (CPU 실행)  
 4. 결과 문자열 Overlay → 10초간 화면에 표시  
-
+![System_Configuration](./results/System_Configuration.png)
 ---
 
 ## Project Structure
